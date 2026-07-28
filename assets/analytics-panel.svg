@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="600" viewBox="0 0 720 600">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0D263B"/><stop offset="1" stop-color="#071725"/></linearGradient>
+  <linearGradient id="bar" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#22D3B6"/><stop offset="1" stop-color="#4F7DF3"/></linearGradient>
+  <filter id="s" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".2"/></filter>
+</defs>
+<rect x="42" y="46" width="636" height="508" rx="30" fill="url(#bg)" filter="url(#s)"/>
+<rect x="78" y="88" width="564" height="52" rx="14" fill="#102F46"/>
+<circle cx="109" cy="114" r="8" fill="#22D3B6"/>
+<rect x="132" y="105" width="150" height="17" rx="8.5" fill="#D1DEE5" opacity=".92"/>
+<rect x="78" y="174" width="178" height="126" rx="20" fill="#102F46"/>
+<rect x="271" y="174" width="178" height="126" rx="20" fill="#102F46"/>
+<rect x="464" y="174" width="178" height="126" rx="20" fill="#102F46"/>
+<circle cx="119" cy="218" r="18" fill="#22D3B6" opacity=".2"/>
+<circle cx="312" cy="218" r="18" fill="#4F7DF3" opacity=".2"/>
+<circle cx="505" cy="218" r="18" fill="#22D3B6" opacity=".2"/>
+<rect x="107" y="248" width="105" height="12" rx="6" fill="#BFD0D9"/>
+<rect x="300" y="248" width="105" height="12" rx="6" fill="#BFD0D9"/>
+<rect x="493" y="248" width="105" height="12" rx="6" fill="#BFD0D9"/>
+<rect x="78" y="330" width="364" height="188" rx="20" fill="#102F46"/>
+<path d="M111 479h292" stroke="#385A6F" stroke-width="2"/>
+<path d="M122 454 175 423l52 14 56-66 55 28 52-73" fill="none" stroke="#22D3B6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="122" cy="454" r="6" fill="#22D3B6"/><circle cx="175" cy="423" r="6" fill="#22D3B6"/><circle cx="227" cy="437" r="6" fill="#22D3B6"/><circle cx="283" cy="371" r="6" fill="#22D3B6"/><circle cx="338" cy="399" r="6" fill="#22D3B6"/><circle cx="390" cy="326" r="6" fill="#22D3B6"/>
+<rect x="464" y="330" width="178" height="188" rx="20" fill="#102F46"/>
+<rect x="493" y="438" width="24" height="45" rx="8" fill="url(#bar)"/>
+<rect x="529" y="406" width="24" height="77" rx="8" fill="url(#bar)"/>
+<rect x="565" y="372" width="24" height="111" rx="8" fill="url(#bar)"/>
+<rect x="601" y="344" width="24" height="139" rx="8" fill="url(#bar)"/>
+</svg>
