@@ -1,400 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AIShield pomáhá firmám ověřit odolnost zaměstnanců pomocí řízených phishingových simulací, praktických školení a následného vyhodnocení.">
-  <meta name="theme-color" content="#071725">
-  <title>AIShield | Phishingové simulace a školení zaměstnanců</title>
+  <meta name="theme-color" content="#071A33">
+  <meta name="description" content="Aura-Sec připravuje zaměstnance českých firem na phishing, podvody a hrozby využívající AI pomocí praktických školení a řízených phishingových simulací.">
+  <meta name="robots" content="index,follow">
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Aura-Sec | Bezpečnost začíná u lidí.</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Přejít na obsah</a>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="AIShield – úvodní stránka">
-        <img src="assets/logo.svg" alt="AIShield" width="172" height="44">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Přejít na hlavní obsah</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Aura-Sec – domů">
+        <img src="assets/logo/Aura-Sec_Symbol_Master.svg" alt="" class="brand-symbol" width="52" height="49">
+        <span class="brand-wordmark">Aura<span>-</span>Sec</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otevřít menu">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Otevřít navigaci</span>
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Hlavní navigace">
+      <nav class="site-nav" id="site-nav" aria-label="Hlavní navigace" data-nav>
         <a href="#sluzby">Služby</a>
-        <a href="#proces">Jak to funguje</a>
-        <a href="#zasady">Naše zásady</a>
-        <a href="#pro-koho">Pro koho</a>
-        <a href="#faq">FAQ</a>
+        <a href="#jak-to-funguje">Jak to funguje</a>
+        <a href="#o-nas">O nás</a>
         <a href="#kontakt">Kontakt</a>
-        <a class="button button-small" href="#kontakt">Nezávazná konzultace</a>
       </nav>
+
+      <a class="button button-small header-cta" href="#kontakt">Domluvit konzultaci</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero section-dark">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
+    <section class="hero" id="top">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> Praktická ochrana proti phishingu</div>
+        <div class="hero-copy">
+          <p class="eyebrow">Praktická kybernetická připravenost pro české firmy</p>
           <h1>Bezpečnost začíná u lidí.</h1>
-          <p class="hero-lead">Řízené phishingové simulace a praktická školení, která pomáhají zaměstnancům rozpoznat útok dříve, než způsobí skutečný problém.</p>
-          <p class="hero-text">AIShield pomáhá firmám bezpečně ověřit skutečnou odolnost zaměstnanců, odhalit slabá místa a dlouhodobě zlepšovat bezpečné chování.</p>
-
+          <p class="hero-claim">Připravujeme vaše zaměstnance na phishing, podvody a hrozby využívající AI.</p>
+          <p class="hero-text">
+            Spojujeme praktické vzdělávání s řízenými phishingovými simulacemi.
+            Výsledkem není hledání viníka, ale jasný přehled, kde je prostor ke zlepšení a jak na něm pracovat.
+          </p>
           <div class="hero-actions">
-            <a class="button" href="#kontakt">Nezávazná konzultace</a>
-            <a class="button button-ghost" href="#proces">Jak AIShield funguje</a>
+            <a class="button" href="#jak-to-funguje">Jak to funguje</a>
+            <a class="button button-secondary" href="#sluzby">Prohlédnout služby</a>
           </div>
 
-          <div class="trust-row" aria-label="Hlavní přínosy">
-            <span>Řízené simulace</span>
-            <span>Praktická školení</span>
-            <span>Srozumitelné výsledky</span>
+          <div class="hero-note" aria-label="Hlavní principy služby">
+            <span>Prakticky</span>
+            <span>Respektujícím způsobem</span>
+            <span>S měřitelným výsledkem</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <img src="assets/hero-shield.svg" alt="Digitální štít chránící firemní e-mailovou komunikaci" width="640" height="560">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="aura-decoration aura-decoration-one"></div>
+          <div class="aura-decoration aura-decoration-two"></div>
+
+          <div class="hero-card hero-card-main">
+            <div class="hero-card-logo">
+              <img src="assets/logo/Aura-Sec_Symbol_Master.svg" alt="" width="136" height="128">
+            </div>
+            <p class="hero-card-kicker">Připravenost místo strachu</p>
+            <p class="hero-card-title">Technologie pomáhá.<br>Člověk rozhoduje.</p>
+          </div>
+
+          <div class="hero-card hero-card-small card-recognize">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6S2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+            </span>
+            <div><strong>Rozpoznat</strong><small>signály rizika</small></div>
+          </div>
+
+          <div class="hero-card hero-card-small card-react">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v9l5 3"/><circle cx="12" cy="12" r="9"/></svg>
+            </span>
+            <div><strong>Reagovat</strong><small>správně a včas</small></div>
+          </div>
+
+          <div class="hero-card hero-card-small card-improve">
+            <span class="mini-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 5-5 4 4 7-8"/><path d="M15 7h5v5"/></svg>
+            </span>
+            <div><strong>Zlepšovat</strong><small>bezpečnostní návyky</small></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-light" id="problem">
-      <div class="container">
-        <div class="section-heading narrow reveal">
-          <div class="eyebrow eyebrow-dark"><span></span> Proč je to důležité</div>
-          <h2>Technologie sama nestačí</h2>
-          <p>Moderní bezpečnostní nástroje zachytí velkou část nebezpečných zpráv. Některé útoky se ale stále spoléhají především na lidskou důvěru, časový tlak, zvědavost nebo strach.</p>
-        </div>
-
-        <div class="card-grid three">
-          <article class="card reveal">
-            <div class="icon-wrap"><img src="assets/icon-mail.svg" alt="" aria-hidden="true"></div>
-            <h3>Přesvědčivé podvodné zprávy</h3>
-            <p>Útočníci napodobují kolegy, vedení firmy, zákazníky, dodavatele i běžně používané služby.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="icon-wrap"><img src="assets/icon-eye.svg" alt="" aria-hidden="true"></div>
-            <h3>Neznámá úroveň odolnosti</h3>
-            <p>Bez praktického ověření firma často neví, jak zaměstnanci na phishingovou zprávu skutečně zareagují.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="icon-wrap"><img src="assets/icon-training.svg" alt="" aria-hidden="true"></div>
-            <h3>Školení bez ověření</h3>
-            <p>Teorie sama o sobě neukáže, zda zaměstnanci dokážou znalosti použít v reálné situaci.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="sluzby">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow eyebrow-dark"><span></span> Naše služby</div>
-          <h2>Co pro vaši firmu zajistíme</h2>
-          <p>Od bezpečně připravené simulace až po srozumitelné vyhodnocení a následné ověření zlepšení.</p>
-        </div>
-
-        <div class="card-grid four">
-          <article class="card service-card reveal">
-            <div class="icon-wrap"><img src="assets/icon-shield.svg" alt="" aria-hidden="true"></div>
-            <h3>Řízená phishingová simulace</h3>
-            <p>Realistický, ale bezpečný test podle předem schváleného scénáře a dohodnutého rozsahu.</p>
-          </article>
-
-          <article class="card service-card reveal">
-            <div class="icon-wrap"><img src="assets/icon-chart.svg" alt="" aria-hidden="true"></div>
-            <h3>Vyhodnocení a doporučení</h3>
-            <p>Přehled výsledků, zjištěných rizik, nejčastějších chyb a doporučených opatření.</p>
-          </article>
-
-          <article class="card service-card reveal">
-            <div class="icon-wrap"><img src="assets/icon-training.svg" alt="" aria-hidden="true"></div>
-            <h3>Praktické školení</h3>
-            <p>Srozumitelný trénink zaměřený na rozpoznání útoku, správnou reakci a interní nahlášení.</p>
-          </article>
-
-          <article class="card service-card reveal">
-            <div class="icon-wrap"><img src="assets/icon-retest.svg" alt="" aria-hidden="true"></div>
-            <h3>Následný retest</h3>
-            <p>Opakovaná simulace, která ukáže, zda školení vedlo k měřitelnému zlepšení.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-white" id="proces">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow eyebrow-dark"><span></span> Průběh spolupráce</div>
-          <h2>Jak AIShield funguje</h2>
-          <p>Každá kampaň má jasný cíl, schválená pravidla a předem dohodnutý způsob vyhodnocení.</p>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="step">01</div>
-            <div><h3>Úvodní konzultace</h3><p>Seznámíme se s prostředím firmy, cílem testování a současnými bezpečnostními postupy.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="step">02</div>
-            <div><h3>Stanovení pravidel</h3><p>Určíme rozsah kampaně, skupinu příjemců, termín, způsob vyhodnocení a pravidla práce s údaji.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="step">03</div>
-            <div><h3>Příprava scénáře</h3><p>Připravíme simulační e-mail a bezpečnou cílovou stránku. Vše schválí odpovědná osoba zákazníka.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="step">04</div>
-            <div><h3>Spuštění simulace</h3><p>Simulační zprávy odešleme v dohodnutém termínu a v kontrolovaném prostředí.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="step">05</div>
-            <div><h3>Vyhodnocení a školení</h3><p>Zpracujeme výsledky, představíme doporučení a připravíme zaměstnance na podobné situace.</p></div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="step">06</div>
-            <div><h3>Ověření zlepšení</h3><p>Následný retest ukáže, zda zaměstnanci dokážou získané zkušenosti použít v praxi.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark principles" id="zasady">
+    <section class="principles" aria-label="Přístup Aura-Sec">
       <div class="container principles-grid">
-        <div class="reveal">
-          <div class="eyebrow"><span></span> Odpovědný přístup</div>
-          <h2>Bezpečná simulace začíná jasnými pravidly</h2>
-          <p>Phishingové testování nemá zaměstnance zesměšňovat ani trestat. Jeho cílem je bezpečně odhalit rizika a vytvořit prostor pro zlepšení.</p>
-          <div class="principle-highlight">Cílem není hledání viníků. Cílem je zvýšit odolnost celé organizace.</div>
+        <div>
+          <strong>Bez strašení</strong>
+          <span>Rizika vysvětlujeme věcně a srozumitelně.</span>
         </div>
-
-        <div class="principle-list reveal">
-          <div class="principle-item"><span>✓</span><p>Pouze s předchozím souhlasem oprávněného vedení zákazníka</p></div>
-          <div class="principle-item"><span>✓</span><p>Předem stanovený rozsah, termín a způsob vyhodnocení</p></div>
-          <div class="principle-item"><span>✓</span><p>Žádné získávání skutečných hesel nebo přihlašovacích údajů</p></div>
-          <div class="principle-item"><span>✓</span><p>Použití vlastních kontrolovaných simulačních domén</p></div>
-          <div class="principle-item"><span>✓</span><p>Zpracování pouze údajů nezbytných pro provedení kampaně</p></div>
-          <div class="principle-item"><span>✓</span><p>Předem dohodnutá doba uchování údajů</p></div>
+        <div>
+          <strong>Bez zostuzování</strong>
+          <span>Zaměstnanec není problém, ale součást řešení.</span>
+        </div>
+        <div>
+          <strong>S jasným dalším krokem</strong>
+          <span>Výsledky převádíme do konkrétních doporučení.</span>
         </div>
       </div>
     </section>
 
-    <section class="section section-light" id="pro-koho">
+    <section class="section" id="sluzby">
       <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow eyebrow-dark"><span></span> Pro koho je služba vhodná</div>
-          <h2>AIShield pro firmy, které chtějí měřitelně zlepšovat bezpečnost</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Služby</p>
+          <h2>Od povědomí k reálné připravenosti</h2>
+          <p>
+            Nestačí vědět, že phishing existuje. Zaměstnanci potřebují rozpoznat situaci v praxi,
+            správně reagovat a mít jistotu, že se mohou z chyb bezpečně poučit.
+          </p>
         </div>
 
-        <div class="card-grid four">
-          <article class="card reveal"><h3>Malé a střední firmy</h3><p>Pro organizace, které chtějí posílit bezpečnost bez budování rozsáhlého interního týmu.</p></article>
-          <article class="card reveal"><h3>Výrobní a obchodní společnosti</h3><p>Pro firmy, kde kompromitovaný e-mail může ohrozit objednávky, fakturaci nebo interní provoz.</p></article>
-          <article class="card reveal"><h3>Organizace s citlivými údaji</h3><p>Pro společnosti pracující s osobními, zákaznickými, technickými nebo obchodními informacemi.</p></article>
-          <article class="card reveal"><h3>Firmy bez bezpečnostního týmu</h3><p>Pro organizace, které potřebují praktický a srozumitelný způsob, jak ověřit připravenost lidí.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-white why">
-      <div class="container why-grid">
-        <div class="why-visual reveal">
-          <img src="assets/analytics-panel.svg" alt="Přehledné vyhodnocení bezpečnostní kampaně" width="620" height="520">
-        </div>
-        <div class="why-copy reveal">
-          <div class="eyebrow eyebrow-dark"><span></span> Proč AIShield</div>
-          <h2>Praktický přístup, kterému rozumí vedení i zaměstnanci</h2>
-
-          <div class="benefit">
-            <span>01</span>
-            <div><h3>Praktické scénáře</h3><p>Simulace vycházejí ze situací, se kterými se zaměstnanci mohou skutečně setkat.</p></div>
-          </div>
-          <div class="benefit">
-            <span>02</span>
-            <div><h3>Srozumitelné výsledky</h3><p>Technické údaje převádíme do přehledu použitelného pro vedení firmy i zaměstnance.</p></div>
-          </div>
-          <div class="benefit">
-            <span>03</span>
-            <div><h3>Osobní přístup</h3><p>Rozsah kampaně a školení přizpůsobujeme konkrétnímu prostředí zákazníka.</p></div>
-          </div>
-          <div class="benefit">
-            <span>04</span>
-            <div><h3>Měřitelný posun</h3><p>Následná simulace umožní porovnat výsledky a ověřit účinnost školení.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="faq">
-      <div class="container faq-grid">
-        <div class="section-heading left reveal">
-          <div class="eyebrow eyebrow-dark"><span></span> Časté otázky</div>
-          <h2>Co firmy obvykle zajímá</h2>
-          <p>Konkrétní rozsah kampaně vždy stanovujeme společně před jejím spuštěním.</p>
-        </div>
-
-        <div class="accordion reveal">
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Co se během simulace sleduje?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Rozsah sledovaných událostí je vždy stanoven předem. Typicky se vyhodnocuje doručení zprávy, otevření simulačního odkazu nebo dokončení předem definovaného kroku.</p>
+        <div class="cards cards-three">
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v13H4z"/><path d="M8 9h8M8 13h5"/></svg>
             </div>
+            <h3>Praktická školení</h3>
+            <p>
+              Srozumitelná školení zaměřená na phishing, podvody, sociální inženýrství
+              a nové scénáře využívající AI.
+            </p>
+            <ul class="check-list">
+              <li>reálné příklady z každodenní praxe</li>
+              <li>jazyk bez zbytečného technického žargonu</li>
+              <li>důraz na správnou reakci, ne na memorování</li>
+            </ul>
           </article>
 
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Budete získávat hesla zaměstnanců?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Ne. Simulace není určena ke sběru skutečných hesel ani jiných přihlašovacích údajů.</p>
+          <article class="service-card featured">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m4 7 8 6 8-6"/></svg>
             </div>
+            <h3>Phishingové simulace</h3>
+            <p>
+              Řízené simulace pro ověření, jak organizace reaguje na realistické podvodné zprávy
+              v bezpečném a předem dohodnutém rámci.
+            </p>
+            <ul class="check-list">
+              <li>se souhlasem vedení zákazníka</li>
+              <li>bez sběru skutečných hesel</li>
+              <li>výsledek slouží jako podklad pro vzdělávání</li>
+            </ul>
           </article>
 
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Uvidí vedení výsledky jednotlivých zaměstnanců?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Způsob vyhodnocení se stanoví před zahájením kampaně. Výsledky mohou být prezentovány souhrnně nebo podle předem schválených pravidel.</p>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m4 7H2"/></svg>
             </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Můžete odesílat zprávy z naší firemní domény?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>AIShield používá vlastní kontrolované simulační domény. Nebudeme neoprávněně podvrhovat doménu zákazníka ani obcházet její bezpečnostní nastavení.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Co se stane po kliknutí na simulační odkaz?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Uživatel je přesměrován na bezpečnou stránku vytvořenou pouze pro účely simulace. Podle scénáře může následovat okamžité vysvětlení nebo školení po skončení kampaně.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              Jak dlouho celý proces trvá?
-              <span>+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Délka závisí na rozsahu firmy, počtu zaměstnanců, zvoleném scénáři a podobě školení. Konkrétní harmonogram stanovíme při úvodní konzultaci.</p>
-            </div>
+            <h3>Vyhodnocení a doporučení</h3>
+            <p>
+              Výsledky interpretujeme věcně a v kontextu. Ukazujeme, kde má smysl posílit návyky
+              a jaký další krok přinese největší užitek.
+            </p>
+            <ul class="check-list">
+              <li>přehledné metriky a shrnutí</li>
+              <li>respektující interpretace výsledků</li>
+              <li>praktická doporučení pro další rozvoj</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="contact section-dark" id="kontakt">
+    <section class="section section-cloud" id="jak-to-funguje">
+      <div class="container">
+        <div class="section-heading section-heading-wide">
+          <p class="eyebrow">Jak to funguje</p>
+          <h2>Jednoduchý proces, jasný cíl</h2>
+          <p>
+            Každou spolupráci nastavujeme podle prostředí firmy, cílové skupiny a úrovně rizika.
+            Nejde o jednorázový test lidí, ale o řízený vzdělávací proces.
+          </p>
+        </div>
+
+        <ol class="process">
+          <li class="process-step">
+            <span class="process-number">01</span>
+            <div>
+              <h3>Domluvíme cíl a rozsah</h3>
+              <p>Ujasníme si cílovou skupinu, způsob komunikace, očekávání a pravidla simulace.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-number">02</span>
+            <div>
+              <h3>Připravíme scénář</h3>
+              <p>Scénář přizpůsobíme reálnému prostředí firmy tak, aby byl praktický, ale stále bezpečný a kontrolovaný.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-number">03</span>
+            <div>
+              <h3>Proběhne simulace a vzdělávání</h3>
+              <p>Účastníci se setkají s realistickou situací a následně získají srozumitelný kontext i doporučený postup.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="process-number">04</span>
+            <div>
+              <h3>Vyhodnotíme a doporučíme další krok</h3>
+              <p>Výsledky shrneme bez dramatizace a navrhneme konkrétní oblasti pro další vzdělávání.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="trust-panel">
+          <div class="trust-panel-copy">
+            <p class="eyebrow eyebrow-light">Náš princip</p>
+            <h3>„Nehledáme viníka. Hledáme prostor ke zlepšení.“</h3>
+            <p>
+              Bezpečnostní návyky se budují zkušeností. Proto vytváříme prostředí, ve kterém se lidé mohou učit
+              z realistických situací bez ponižování, strašení a zbytečného tlaku.
+            </p>
+          </div>
+          <div class="trust-panel-points">
+            <div><span>01</span><strong>Respekt k účastníkům</strong></div>
+            <div><span>02</span><strong>Transparentní práce s výsledky</strong></div>
+            <div><span>03</span><strong>Praktická doporučení</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="o-nas">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">O nás</p>
+          <h2>Technologie je nástroj. Rozhodující je člověk.</h2>
+          <p class="lead">
+            Aura-Sec pomáhá firmám připravit zaměstnance na phishing, podvody a moderní sociální inženýrství.
+          </p>
+          <p>
+            Naší misí je zvyšovat odolnost organizací tím, že lidé dokážou rozpoznat riziko a správně reagovat.
+            AI vnímáme jako důležitý kontext současných hrozeb, ne jako samoúčelný marketingový motiv.
+          </p>
+          <p>
+            Stavíme na profesionalitě, důvěře a jednoduchosti. Složité bezpečnostní téma převádíme do
+            praktických kroků, kterým rozumí management i samotní účastníci školení.
+          </p>
+        </div>
+
+        <div class="value-stack" aria-label="Hodnoty Aura-Sec">
+          <article>
+            <span class="value-number">01</span>
+            <h3>Profesionalita</h3>
+            <p>Přesná příprava, odpovědný proces a kvalitní podklady.</p>
+          </article>
+          <article>
+            <span class="value-number">02</span>
+            <h3>Důvěra</h3>
+            <p>Klidná komunikace, respekt a transparentní práce s daty.</p>
+          </article>
+          <article>
+            <span class="value-number">03</span>
+            <h3>Jednoduchost</h3>
+            <p>Složité bezpečnostní situace vysvětlujeme lidsky a bez chaosu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cloud">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Pro management, IT i HR</p>
+          <h2>Bezpečnostní povědomí, které lze uchopit</h2>
+          <p>
+            Rozhodovatelé potřebují víc než pocit, že „školení proběhlo“. Potřebují rozumět procesu,
+            výsledkům a tomu, co dělat dál.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article>
+            <span class="benefit-mark"></span>
+            <h3>Srozumitelný výsledek</h3>
+            <p>Výstupy formulujeme tak, aby byly použitelné pro další rozhodování i vzdělávání.</p>
+          </article>
+          <article>
+            <span class="benefit-mark"></span>
+            <h3>Reálný kontext</h3>
+            <p>Pracujeme se situacemi, se kterými se zaměstnanci skutečně mohou setkat.</p>
+          </article>
+          <article>
+            <span class="benefit-mark"></span>
+            <h3>Lidský přístup</h3>
+            <p>Bezpečnost nestavíme na strachu nebo hledání jednotlivce, který „udělal chybu“.</p>
+          </article>
+          <article>
+            <span class="benefit-mark"></span>
+            <h3>Prostor pro zlepšení</h3>
+            <p>Výsledkem je konkrétní další krok, ne pouze procento v závěrečném reportu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt">
       <div class="container contact-grid">
-        <div class="contact-copy reveal">
-          <div class="eyebrow"><span></span> Nezávazná konzultace</div>
-          <h2>Prověřte připravenost své firmy dříve než skutečný útočník</h2>
-          <p>Společně vybereme vhodný rozsah simulace, způsob vyhodnocení a podobu následného školení.</p>
-
-          <div class="contact-details">
-            <a id="contact-email-link" href="mailto:kontakt@aishield.cz">
-              <strong>E-mail</strong>
-              <span id="contact-email">kontakt@aishield.cz</span>
-            </a>
-            <a id="contact-phone-link" href="tel:+420000000000">
-              <strong>Telefon</strong>
-              <span id="contact-phone">+420 XXX XXX XXX</span>
-            </a>
-          </div>
+        <div>
+          <p class="eyebrow eyebrow-light">Kontakt</p>
+          <h2>Chcete zjistit, jak připravit váš tým na reálné hrozby?</h2>
+          <p>
+            Ozvěte se nám. Probereme prostředí vaší firmy, cíle a vhodný rozsah školení nebo phishingové simulace.
+          </p>
         </div>
 
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <div class="form-grid">
-            <label>
-              <span>Jméno *</span>
-              <input type="text" name="name" autocomplete="name" required>
-            </label>
-            <label>
-              <span>Firma *</span>
-              <input type="text" name="company" autocomplete="organization" required>
-            </label>
+        <div class="contact-card">
+          <p class="contact-label">Aura-Sec</p>
+          <h3>Úvodní konzultace</h3>
+          <p>Nezávazně a bez zbytečné technické omáčky.</p>
+
+          <!-- TODO před publikací: nahraďte skutečným veřejným kontaktním e-mailem. -->
+          <a class="contact-link contact-placeholder" href="#kontakt" aria-label="Kontaktní e-mail je potřeba doplnit před publikací">
+            info@DOPLNIT-DOMENU.cz
+          </a>
+
+          <div class="company-data">
+            <span>AuraSec-AI s.r.o.</span>
+            <span>IČO: 299 64 911</span>
+            <span>Sídlo: Liberec, Česká republika</span>
           </div>
-
-          <div class="form-grid">
-            <label>
-              <span>Pracovní e-mail *</span>
-              <input type="email" name="email" autocomplete="email" required>
-            </label>
-            <label>
-              <span>Telefon</span>
-              <input type="tel" name="phone" autocomplete="tel">
-            </label>
-          </div>
-
-          <label>
-            <span>S čím vám můžeme pomoci? *</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-
-          <label class="consent">
-            <input type="checkbox" name="consent" required>
-            <span>Souhlasím se zpracováním údajů za účelem vyřízení této poptávky.</span>
-          </label>
-
-          <button class="button button-full" type="submit">Odeslat nezávaznou poptávku</button>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <img src="assets/logo.svg" alt="AIShield" width="160" height="41">
-        <p>Řízené phishingové simulace a praktická školení kybernetické bezpečnosti.</p>
-      </div>
+      <a class="brand footer-brand" href="#top" aria-label="Aura-Sec – zpět nahoru">
+        <img src="assets/logo/Aura-Sec_Symbol_Master.svg" alt="" class="brand-symbol" width="44" height="41">
+        <span class="brand-wordmark">Aura<span>-</span>Sec</span>
+      </a>
 
-      <div>
-        <h3>Kontakt</h3>
-        <p id="footer-email">kontakt@aishield.cz</p>
-        <p id="footer-phone">+420 XXX XXX XXX</p>
-        <p id="footer-company-id">IČO: doplnit</p>
-      </div>
+      <p>Bezpečnost začíná u lidí.</p>
 
-      <div>
-        <h3>Informace</h3>
-        <a href="#" data-placeholder-link>Ochrana osobních údajů</a>
-        <a href="#" data-placeholder-link>Nastavení cookies</a>
-        <a href="#kontakt">Kontakt</a>
+      <div class="footer-meta">
+        <span>© <span data-year></span> AuraSec-AI s.r.o.</span>
+        <span>IČO: 299 64 911</span>
       </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© <span id="current-year"></span> AIShield. Všechna práva vyhrazena.</span>
-      <a href="#top">Nahoru ↑</a>
     </div>
   </footer>
-
-  <script src="js/config.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
