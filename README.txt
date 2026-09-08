@@ -1,5 +1,5 @@
-Aura-Sec – statický prezentační web
-=====================================
+AuraSec-AI – statický prezentační web
+========================================
 
 Obsah:
 - index.html
@@ -9,13 +9,21 @@ Obsah:
 
 Web nevyžaduje build ani backend. Stačí obsah složky nahrát na běžný webhosting.
 
+Brand:
+- aktuální zdroj pravdy: AuraSec-AI Brand Manual v1.2
+- standardní obchodní a grafický název: AuraSec-AI
+- slogan: „Bezpečnost začíná u lidí.“
+- claim: „Připravujeme vaše zaměstnance na phishing, podvody a hrozby využívající AI.“
+
 PŘED PUBLIKACÍ:
 1. V index.html nahraďte text „info@DOPLNIT-DOMENU.cz“ skutečným veřejným kontaktním e-mailem
    a změňte href odkazu na mailto:skutecny@email.cz.
-2. Pokud chcete favicon 16–24 px, vložte schválenou MICRO variantu podle Brand Manualu v1.1.
-   Z hlavního symbolu nebyla vytvářena vlastní zjednodušená varianta.
+2. Pokud chcete favicon 16–24 px, vložte pouze schválenou MICRO variantu podle Brand Manualu v1.2.
+   Z hlavního symbolu nevytvářejte vlastní zjednodušenou variantu.
 3. Případně nahraďte načítání Manrope z Google Fonts lokálně hostovaným webfontem.
 
 Poznámka k logu:
-Použitý SVG symbol je schválený Aura-Sec_Symbol_Master.svg. Geometrie nebyla upravována.
-Wordmark v hlavičce a patičce je samostatný HTML text „Aura-Sec“ v Manrope, nikoli překreslené logo.
+Použitý SVG symbol je stávající schválený master symbol. Geometrie nebyla upravována.
+Brand Manual v1.2 vyžaduje na tmavých podkladech schválenou DARK variantu loga. Proto web na tmavém footeru
+nepoužívá barevný master symbol; zůstává zde pouze textový zápis AuraSec-AI. DARK asset nebyl generován ani
+odvozován, protože do repozitáře zatím nebyl dodán schválený soubor z Brand Assets v1.2.
